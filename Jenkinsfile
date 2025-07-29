@@ -1,6 +1,7 @@
 node {
     stage('Checkout') {
-        git 'https://github.com/AmitSharma41095/SeleniumJenkinsIntegration.git'
+        git branch: 'main', url: 'https://github.com/AmitSharma41095/SeleniumJenkinsIntegration.git'
+
     }
 
     stage('Build') {
