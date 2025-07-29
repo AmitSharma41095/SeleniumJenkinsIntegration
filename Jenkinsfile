@@ -6,12 +6,12 @@ node {
 
     stage('Build') {
         echo 'Running Maven Clean Install...'
-        sh 'mvn clean install'
+        bat 'mvn clean install'
     }
 
     stage('Test') {
         echo 'Running TestNG Tests...'
-        sh 'mvn test'
+        bat 'mvn test'
     }
 
     stage('Post') {
